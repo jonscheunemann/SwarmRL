@@ -37,6 +37,7 @@ jobs:
           sudo apt-get install libboost-all-dev
           git clone https://github.com/espressomd/espresso.git
           cd espresso
+          git checkout 9bb2daf
           mkdir build && cd build
           cp ../maintainer/configs/maxset.hpp myconfig.hpp
           cmake ../ -D ESPRESSO_BUILD_WITH_WALBERLA=on -D ESPRESSO_BUILD_WITH_FFTW=OFF
